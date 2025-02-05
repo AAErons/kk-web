@@ -1,0 +1,17 @@
+/* index.css */
+@import "tailwindcss";
+
+/* Tailwind Base Styles (if using Tailwind) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    height: 100%;
+}
