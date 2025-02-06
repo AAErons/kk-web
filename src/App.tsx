@@ -1,8 +1,9 @@
 import { FaSpotify, FaYoutube, FaInstagram } from "react-icons/fa";
 import './App.css'
+import {FC, ReactNode} from "react";
 
 // Card Component
-const Card = ({ children }) => {
+const Card: FC<{ children: ReactNode }>  = ({ children }) => {
     return (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             {children}
@@ -11,7 +12,7 @@ const Card = ({ children }) => {
 };
 
 // CardContent Component
-const CardContent = ({ children }) => {
+const CardContent: FC<{ children: ReactNode }>  = ({ children }) => {
     return <div className="p-4">{children}</div>;
 };
 
